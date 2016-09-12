@@ -1,0 +1,11 @@
+commit 89bb8f7fa9cc9bcf4d146bca3255b8e3f8cbd097
+Author: VictorGraciano21 <victor_npd@hotmail.com>
+Date:   Fri Sep 2 11:31:41 2016 -0600
+
+    Cambio en mi readme.txt
+
+commit c79c97fc29da44839bf1c71ed3ea8facf9a10105
+Author: VictorGraciano21 <victor_npd@hotmail.com>
+Date:   Tue Aug 30 11:55:40 2016 -0600
+
+    Commit inicial con readme.txt
