@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			Formularios en HTML
+		</title>
+	</head>
+	<body>
+		<h1>Rellena el siguiente formulario</h1>
+		<p>
+			<form action="ejemplo1.htlm" method="get">
+			<table>
+				<tr>
+					<td>Nombre de usuario:</td>
+					<td><input type="text" name="txtNombre"></td>
+				</tr>
+				<tr>
+					<td>Nombre(s):</td>
+					<td><input type="text" name="txtNombres"></td>
+				</tr>
+				<tr>
+					<td>Apellidos:</td>
+					<td><input type="text" name="txtApellidos"></td>
+				</tr>
+				<tr>
+					<td>Contrase&ntilde;a: <br></td>
+					<td><input type="password" name="txtClave"></td>
+				</tr>
+				<tr>
+					<td>G&eacute;nero</td>
+					<td><select name="genero">
+						<option value="F">Femenino</option>
+						<option value="M">Masculino</option>
+						<option value="O">Otro</option>
+					</select>
+				</td>
+				</tr>
+			</table>
+			<input type="Submit" value="Enviar">
+			<input type="Reset" value="Borrar">
+			</form>
+	</body>
+</html>
