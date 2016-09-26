@@ -1,0 +1,25 @@
+/*selectores*/
+/*1.-Etiquetas*/
+/*2.-Identificadores*/
+/*3.-Clases*/
+body /*Selector - etiqueta*/
+{
+	/*atributo:valor;*/
+	border: 1px solid blue;
+	border-radius: 5px;
+	max-width: 1024px;
+}
+header
+{
+	background: blue; /*Fondo*/
+	border: 1px solid red;
+	color: white; /*Letra*/
+	text-align: center; /*Alineacion*/
+}
+header nav ul li
+{
+	/*border: 1px solid red;*/
+	background: orange;
+	border-radius: 5px;
+	display: inline-block; /*Rompe modelo de caja*/
+}
