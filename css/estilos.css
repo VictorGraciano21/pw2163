@@ -12,14 +12,27 @@ body /*Selector - etiqueta*/
 header
 {
 	background: blue; /*Fondo*/
-	border: 1px solid red;
+	border: 1px solid red; 
 	color: white; /*Letra*/
+	/*padding: 0px 0px 10px 0px;*/
 	text-align: center; /*Alineacion*/
 }
 header nav ul li
 {
 	/*border: 1px solid red;*/
-	background: orange;
-	border-radius: 5px;
+	background: orange;	/*color de fondo*/
+	border-radius: 5px;	/*bordes redondeados*/
+	box-shadow: 2px 2px; /*caja en el fondo (sombra)*/
 	display: inline-block; /*Rompe modelo de caja*/
+	/*width: 80;*/
+	/*margin: 5px 3px;*/
+	/*padding: 5px 3px;*/
+	margin: 0px 10px 10px 0px;  /*Separo las cajas*/
+	padding: 5px 10px; /*agrando los botones (interno)*/
+	width: 80px;		/*Ancho del boton*/
+}
+header nav ul li:hover /*mouse por encima*/
+{
+	background: white;
+	color: orange;
 }
