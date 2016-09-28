@@ -7,6 +7,7 @@ body /*Selector - etiqueta*/
 	/*atributo:valor;*/
 	border: 1px solid blue;
 	border-radius: 5px;
+	margin: 0px auto;
 	max-width: 1024px;
 }
 header
@@ -16,6 +17,12 @@ header
 	color: white; /*Letra*/
 	/*padding: 0px 0px 10px 0px;*/
 	text-align: center; /*Alineacion*/
+}
+header img
+{
+	float: right;
+	width: 100px; /*Ancho de la imagen*/
+	margin: -70px 30px 0px 0px;
 }
 header nav ul li
 {
