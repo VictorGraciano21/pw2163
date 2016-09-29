@@ -7,6 +7,7 @@ body /*Selector - etiqueta*/
 	/*atributo:valor;*/
 	border: 1px solid blue;
 	border-radius: 5px;
+	font-size: 16px; /*tamaño de fuente estandar*/
 	margin: 0px auto;
 	max-width: 1024px;
 }
@@ -42,4 +43,24 @@ header nav ul li:hover /*mouse por encima*/
 {
 	background: white;
 	color: orange;
+}
+
+footer
+{
+	border: 1px solid blue;
+	font-size: 0.8em;
+	text-align: center; /*alineamos todo el texto*/
+}
+
+main section 
+{
+	margin-top: 15px 0px 0px 0px; /*para mover el texto mas abajo*/
+}
+
+main section article
+{
+	/*border: 1px solid red;*/
+	display: inline-block;
+	vertical-align: top;
+	width:  24%;
 }
