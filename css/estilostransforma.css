@@ -1,0 +1,68 @@
+article{
+	background: greenyellow;	/*fondo*/
+	border: 2px solid black;	/*borde*/
+	color: black;				/*color de letra*/
+	margin: 20px 5px;			/*margen exterior*/
+	padding: 15px;				/*margen interior*/
+	text-align: center;			/*alinación del texto*/
+	-moz-transition: all 5s linear;
+	-ms-transition: all 5s linear;
+	-o-transition: all 5s linear;
+	-webkit-transition: all 5s linear;
+	width: 400px;				/*ancho de caja*/
+}						
+
+article p {
+	font: 30px Tahoma; 	/*tipo de letra*/
+	font-weight: bold;	/*negritas*/
+	width: 100%;		/*ancho de tecto*/
+}
+/*
+article:hover /*mouse ensima*//*{
+	height: 400px;*/	/*alto*/
+	/*width: 800px;*/	/*ancho*/
+/*}*/
+
+/*article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: translate(150px, 300px);		/*para mozilla*/
+	/*-ms-transform: translate(150px, 300px);	*/		/*para explorer*/
+	/*-o-transform: translate(150px, 300px);	*/		/*para opera*/
+	/*-webkit-transform: translate(150px, 300px);	*/	/*para chrome y safari*/
+/*}*/
+
+/*article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: rotate(180deg);		
+	-ms-transform: rotate(180deg);			
+	-o-transform: rotate(180deg);			
+	-webkit-transform: rotate(180deg);
+}*/
+
+/*article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: scale(1.5);		
+	-ms-transform: scale(1.5);			
+	-o-transform: scale(1.5);			
+	-webkit-transform: scale(1.5);
+}*/
+
+/*article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: skew(10deg,10deg);		
+	-ms-transform: skew(10deg,10deg);			
+	-o-transform: skew(10deg,10deg);			
+	-webkit-transform: skew(10deg,10deg);
+}*/
+article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: translate(150px, 300px) rotate(180deg) scale(1.5) skew(10deg,10deg);		
+	-ms-transform: translate(150px, 300px) rotate(180deg) scale(1.5) skew(10deg,10deg);			
+	-o-transform: translate(150px, 300px) rotate(180deg) scale(1.5) skew(10deg,10deg);			
+	-webkit-transform: translate(150px, 300px) rotate(180deg) scale(1.5) skew(10deg,10deg);
+}
