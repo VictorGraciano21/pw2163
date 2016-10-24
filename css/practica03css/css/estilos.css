@@ -1,0 +1,25 @@
+body{
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+header nav ul li{
+	margin-left: 25px;
+	display: inline-block;
+}
+
+#red1{
+	float: right;
+	margin-left: 10px;
+}
+
+#red2{
+	float: right;
+	margin-left: 10px;
+}
+
+#red3{
+	float: right;
+	margin-left: 10px;
+}
