@@ -52,6 +52,13 @@ header nav ul li{
 #secc01art02{
 	width: 30%;
 }
+#secc01art02 ul{
+	list-style: none;
+}
+#secc01art02 ul li:before{
+	content: ".  ";
+	color: #FF0099;
+}
 #segundaseccion article{
 	text-align: right;
 	padding-right: 130px;
@@ -60,6 +67,28 @@ header nav ul li{
 	display: inline-block;
 	width: 22%;
 	vertical-align: top;
+}
+
+#terceraseccion article img{
+	vertical-align: middle;
+}
+#mailinglist{
+	padding-top: 60px
+}
+
+.colorazul{
+	color: #16BEF8;
+}
+.colorrosa{
+	color: #FF0099;
+}
+.colorverde{
+	color: #A6DE47;
+}
+
+.colorazul,.colorverde,.colorrosa{
+	font-size: 1.3em;
+	font-weight: bold;
 }
 
 .numerotelefono{

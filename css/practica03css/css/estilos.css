@@ -3,7 +3,9 @@ body{
 	margin: 0 auto;
 	max-width: 1024px;
 }
-
+header nav{
+	padding-top: 20px;
+}
 header nav ul li{
 	margin-left: 25px;
 	display: inline-block;
@@ -22,4 +24,32 @@ header nav ul li{
 #red3{
 	float: right;
 	margin-left: 10px;
+}
+
+#seccion1{
+	height: 317.99px;
+	/*margin-top: 60px;*/
+}
+#seccion1 article{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+}
+#limones{
+	width: 60%;
+}
+#publicidad{
+	width: 30%;
+}
+#publicidadIA{
+	
+}
+#publicidadDA{
+	
+}
+#publicidadIB{
+	
+}
+#publicidadDB{
+	
 }
