@@ -1,0 +1,16 @@
+body{
+	font-size: 16px; 
+	margin: 0 auto;	
+	max-width: 1024px; 
+	min-width: 1024px; 
+}
+
+body table{
+	width: 900px;
+	height: 900px;
+}
+
+body table tr td input{
+	width: 300px;
+	height: 300px;
+}
