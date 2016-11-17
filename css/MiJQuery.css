@@ -1,0 +1,8 @@
+#imgFoto{
+	border-radius: 500px;
+}
+
+#txtNombre, #imgFoto{
+	display: none; /*Se oculta y recuperas el espacio*/ 
+	/*visibility: none; Se oculta pero mantiene el espacio*/
+}
