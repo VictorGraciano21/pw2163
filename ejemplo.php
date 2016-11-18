@@ -5,9 +5,9 @@
 	<input type="text" name="txtNombre" id="txtNombre"><br>
 	<input type="password" name="txtClave" id="txtClave"><br>
 	<select name="txtTipo" id="txtTipo">
-		<option value="administrador"></option>
-		<option value="invitado"></option>
-		<option value="colado"></option>
+		<option value="administrador">Administrador</option>
+		<option value="invitado">Invitado</option>
+		<option value="colado">Colado</option>
 	</select>
 	<input type="submit" value="Enviar">
 </form>
