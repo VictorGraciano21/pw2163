@@ -7,23 +7,28 @@ var inicioUsuarios = function(){
 						 "&usuario="+usuario+
 						 "&clave="+clave+
 						 "&id="+Math.random();
-		//Hacemos la peticion remota
-		$.ajax({
-			cache:false,
-			type:"POST",
-			dataType:"json",
-			url:"php/utilerias.php",
-			data:parametros,
-			success: function(response){
-				//Si todo sale bien
-			},
-			error: function(xhr,ajaxOptions,thrownError){
-				//Si todo sale mal
-			}
-		});
 		//Validamos que no esten vacios
 		if (usuario!="" && clave!="") {
-
+		//Hacemos la peticion remota
+			$.ajax({
+				cache:false,
+				type:"POST",
+				dataType:"json",
+				url:"php/utilerias.php",
+				data:parametros,
+				success: function(response){
+					//Si todo sale bien
+					if (response.respuesta) {
+						$("#entradaUsuario").hide("slow");
+						$("nav").show(); 
+					}else{
+						alert("Datos incorrectos :c");
+					}
+				},
+				error: function(xhr,ajaxOptions,thrownError){
+					//Si todo sale mal
+				}
+			});
 		}else{
 			alert("Usuario y clave son obligatorios");
 		};
