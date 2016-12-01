@@ -10,23 +10,29 @@ var inicioUsuarios = function(){
 		//Validamos que no esten vacios
 		if (usuario!="" && clave!="") {
 		//Hacemos la peticion remota
+		//alert("Llama al ajax");
+
 			$.ajax({
+				beforeSend:function(){
+//alert("t");
+				},
 				cache:false,
 				type:"POST",
 				dataType:"json",
 				url:"php/utilerias.php",
 				data:parametros,
-				success: function(response){
+				success:function(response){
 					//Si todo sale bien
-					if (response.respuesta) {
+					if (response.respuesta==true) {
 						$("#entradaUsuario").hide("slow");
 						$("nav").show(); 
 					}else{
 						alert("Datos incorrectos :c");
 					}
 				},
-				error: function(xhr,ajaxOptions,thrownError){
+				error:function(xhr,ajaxOptions,thrownError){
 					//Si todo sale mal
+					alert("todo salioo mal");
 				}
 			});
 		}else{
@@ -40,7 +46,7 @@ var inicioUsuarios = function(){
 		}
 	}
 	//Keypress: se ejecuta cada vez que presiono una tecla sobre input.
-	$("#tstClave").on("keypress",teclaClave);
+	$("#txtClave").on("keypress",teclaClave);
 }
 //Evento inicial
 $(document).on("ready",inicioUsuarios);
