@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de prueba</title>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/eventos.js"></script>  
+	
+</head>
+<body background="imagenes/fondo.jpg">
+	<header>
+		<h1>Sistema de prueba</h1>
+		<img src="imagenes/logo_2.png" alt="">
+		<nav>
+			<ul>
+				<li>
+					<button class="btn btn-default" id="btnInicio">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						Inicio
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-primary" id="btnAlta">
+						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+						Alta
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-danger" id="btnBaja">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+						Baja
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-warning" id="btnCambio">
+						<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+						Cambio
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-info" id="btnConsulta">
+						<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+						Consulta
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="entradaUsuario">
+		<article>
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Datos de usuario</h3>
+			  </div>
+			  <div class="panel-body">
+			    <input type="text" id="txtUsuario" class="form-control" placeholder="Nombre de usuario" autofocus>
+			    <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
+			    <button id="btnValidaUsuario" class="btn btn-primary btn-lg btn-block">
+			    	Entrar
+			    </button>
+			  </div>
+			</div>
+		</article>
+	</section>
+	<main>
+		<article id="artAltaUsuarios">
+			<h2>Alta de usuarios</h2>
+			<input type="text" id="txtUsuario" placeholder="Usuario" class="form-control">
+			<input type="text" id="txtNombre" placeholder="Nombre" class="form-control">
+			<input type="password" id="txtClave" placeholder="Clave" class="form-control">
+			<select name="txtTipo" id="txtTipo" class="form-control">
+				<option value="ninguno">Seleccione una opción</option>
+				<option value="administrador">Administrador</option>
+				<option value="invitado">Invitado</option>
+				<option value="colado">Colado</option>
+			</select>
+			<button class="btn btn-success btn-lg btn-block" id="btnGuardaUsuario">
+				Guardar
+			</button>
+		</article>
+		<article id="artBajaUsuario">
+			<h2>Baja de usuarios</h2>
+			<input type="text" id="txtUsuarioDarBaja" placeholder="Usuario a dar de baja" class="form-control">
+			<input type="text" id="txtUsuarioBaja" placeholder="Usuario" class="form-control">
+			<input type="password" id="txtClaveBaja" placeholder="Clave" class="form-control">
+			<button id="btnBajaUsuario" class="btn btn-danger btn-lg btn-block">Dar de baja</button>
+		</article>
+		<article id="artCambioUsuario">
+			<h2>Cambio de rol del usuarios</h2>
+			<input type="text" id="txtUsuarioACambio" placeholder="Usuario a cambiar" class="form-control">
+			<select name="txtTipoCambio" id="txtTipoCambio" class="form-control">
+				<option value="ninguno">Seleccione una opción</option>
+				<option value="administrador">Administrador</option>
+				<option value="invitado">Invitado</option>
+				<option value="colado">Colado</option>
+			</select>
+			<input type="text" id="txtUsuarioCambio" placeholder="Usuario" class="form-control">
+			<input type="password" id="txtClaveCambio" placeholder="Clave" class="form-control">
+			<button id="btnCambioUsuario" class="btn btn-warning btn-lg btn-block">Guardar cambios</button>
+		</article>
+		<article id="artConsultaUsuario">
+			<h2>Baja de usuarios</h2>
+			<input type="text" id="txtUsuarioConsulta" placeholder="Usuario" class="form-control">
+			<button id="btnConcultaUsuario" class="btn btn-info btn-lg btn-block">Consultar</button>
+		</article>
+	</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
