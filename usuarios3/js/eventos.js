@@ -92,19 +92,21 @@ var inicioUsuarios = function()
 
 	var GuardaUsuario = function()
 	{
+		event.preventDefault();
 		//Código para guardar usuario.
 		var a_usuario = $("#txtUsuario").val();
 		var a_nombre = $("#txtNombre").val();
 		var a_clave = $("#txtClave").val();
 		var a_tipo = $("#txtTipo").val();
 
-		if(a_usuario!="" && a_nombre!="" && a_clave!="" && a_tipo!="Seleccione una opción" )
+		if(a_usuario!="" && a_nombre!="" && a_clave!="" && a_tipo!="" )
 		{
 		var parametros = "opcion=alta"+
 		                 "&usuario="+a_usuario+
 		                 "&nombre"+a_nombre+
 		                 "&clave"+a_clave+
-		                 "&tipo"+a_tipo;
+		                 "&tipo"+a_tipo+
+		                 "&id="+Math.random();
 		
 			//Hacemos la petición remota
 			$.ajax({
@@ -117,11 +119,13 @@ var inicioUsuarios = function()
 					if(response.respuesta == true)
 					{    
 						alert("Guardado exitoso :'D");
+						$("#artAltaUsuarios > input").val("");
 					}
 					else
-					{
-						alert("Datos incorrectos :(");
-					}
+						alert("Usuario ya existente");	
+				},
+				error:function(xhr,ajaxOptions,thrownError){
+					console.log("Todo salio mal, no se pudo conectar al servidor :(");
 				}
 			});
 		}else{

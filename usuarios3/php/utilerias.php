@@ -44,7 +44,7 @@
 		$arregloJSON = array('respuesta' => $respuesta );
 		print json_encode($arregloJSON);
 	}
-	function altaUsuario()
+	function altaUsuario() //Fue modificada en clase
 	{		
 		$respuesta = false;			
 		$au = GetSQLValueString($_POST["usuario"],"text"); //limpieza
@@ -55,15 +55,17 @@
 		$conexion  = mysql_connect("localhost","root","");
 		//Conexión a la base de datos
 		mysql_select_db("bd2163");
-		$consulta  = sprintf("insert usuarios values ("+$au,$an,$ac,$at+")");
-		$resultado = mysql_query($consulta);
+		$consulta  = sprintf("insert into usuarios values (%s,%s,%s,%s)",$au,$an,$ac,$at); //No estaba tan mal
+		// $resultado = 
+		mysql_query($consulta);
 		//Esperamos un solo resultado
-		if(mysql_num_rows($resultado) == 1)
+		//Si el registro se afecto
+		if(mysql_affected_rows() > 0)
 		{
 			$respuesta = true;
 		}
-		$arregloJSON_A = array('respuesta' => $respuesta );
-		print json_encode($arregloJSON_A);
+		$arregloJSON = array('respuesta' => $respuesta );
+		print json_encode($arregloJSON);
 	}
 	function bajaUsuario()
 	{		
